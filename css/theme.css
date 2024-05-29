@@ -105,19 +105,19 @@ header {
 
 @media screen and (max-width: 466px) { 
     .navbar h1{
-        font-size: 2rem;
+        font-size: 3rem;
         letter-spacing: 0.2rem;
     }
 
     .navbar .links a{
-        font-size: .9rem;
+        font-size: 1.6rem;
         font-weight: 200;
     }
 
     .navbar .links {
         top: 80px;
         right: 0;
-        width: 40%;
+        width: 60%;
         height: 35vh;
         
     }
