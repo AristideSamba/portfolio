@@ -20,7 +20,7 @@ header {
 
 .navbar h1{
     color: var(--color-title);
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight:lighter;
     letter-spacing: 0.8rem;
 }
@@ -47,7 +47,7 @@ header {
 
 .navbar .links a{
     color: var(--color-title);
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: 300;
 }
 
@@ -75,12 +75,14 @@ header {
     display: none;
 }
 
-.welcomeword{
+.welcomeword {
     display: flex;
-    color: var(--color-title);
     justify-content: center;
+    color: var(--color-title);
+    text-align: center;
     padding-top: 25px;
 }
+
 
 @media screen and (max-width: 1080px) { 
     .menu-icon{
