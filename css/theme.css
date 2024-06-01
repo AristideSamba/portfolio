@@ -27,6 +27,7 @@ header {
 
 .navbar h1 span{
     font-weight: 500;
+    color: var(--hover-color);
 }
 
 .navbar{
@@ -42,7 +43,8 @@ header {
 
 .navbar .links{
     display: flex;
-    gap: 3rem;
+    gap: 2.6rem;
+    margin-right: 0;
 }
 
 .navbar .links a{
