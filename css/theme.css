@@ -10,13 +10,25 @@
     --header-bgcolor: #30363d;
 }
 
-header {
-    position: relative;
-    margin: 0 auto;
+
+header{
     background-color: var(--header-bgcolor);
+    margin: 0;
     padding: 0;
-    height: 80px;
 }
+
+.navbar{
+    position: relative;
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    height: 80px;
+    margin: auto 0;
+    padding: 10px ;
+    justify-content: space-between;
+    align-items: center;
+  }
+
 
 .navbar h1{
     color: var(--color-title);
@@ -30,16 +42,7 @@ header {
     color: var(--hover-color);
 }
 
-.navbar{
-    width: 100%;
-    max-width: 1200px;
-    height: 60px;
-    margin: 0;
-    display: flex;
-    padding: 40px ;
-    justify-content: space-between;
-    align-items: center;
-}
+
 
 .navbar .links{
     display: flex;
@@ -109,16 +112,16 @@ header {
         top: 81px;
         right: 0;
         position: absolute;
-        background-color: rgba(255, 255, 255, 0.052);
+        background-color: rgba(255, 255, 255, 0.05);
         backdrop-filter: blur(8px);
         display: flex;
         flex-direction: column;
-        width: 30%;
-        height: 40vh;
+        width: 80%;
+        height: 100vh;
         justify-content: center;
         align-items: center;
         border-radius: 10px;
-        gap: 1rem;
+        gap: 5rem;
         margin-right: -100%;
         transition: all 0.5s ease;
     }
@@ -126,6 +129,11 @@ header {
     .links.mobile-menu{
         margin-right: 0;
     }
+
+    .navbar .links li a:hover{
+        color: var(--color-title);
+    }
+
     .navbar .links li a::after{
         display: none;
     }
@@ -142,10 +150,7 @@ header {
         letter-spacing: 0.2rem;
     }
 
-    .navbar .links a{
-        font-size: 1.6rem;
-        font-weight: 200;
-    }
+
 
     .navbar .links {
         top: 80px;
