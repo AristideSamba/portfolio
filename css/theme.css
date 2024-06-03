@@ -137,10 +137,10 @@ header{
         display: flex;
         flex-direction: column;
         width: 80%;
-        height: 80vh;
+        height: 70vh;
         justify-content: center;
         text-align: left;
-        gap: 4rem;
+        gap: 3rem;
         margin-right: -100%;
         padding: 5px 40px;
         transition: all 0.5s ease;
