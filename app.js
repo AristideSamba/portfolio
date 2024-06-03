@@ -4,5 +4,4 @@ const overlay = document.querySelector('.overlay')
 
 menuDeroulant.addEventListener('click', ()=> {
     navLinks.classList.toggle('mobile-menu')
-    overlay.classList.toggle('active')
 })
