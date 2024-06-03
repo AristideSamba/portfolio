@@ -5,6 +5,7 @@ html {
   block-size: border-box;
   scroll-behavior: smooth;
   background-color: #161b22;
+  overflow: hidden;
 }
 
 body {
