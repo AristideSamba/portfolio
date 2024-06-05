@@ -11,7 +11,7 @@ body {
   
   font: 1.6rem "Poppins", sans-serif;
   line-height: 1.6;
-  margin: 0;
+  margin-top: 80px; 
 }
 
 *,
