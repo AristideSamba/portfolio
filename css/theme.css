@@ -119,7 +119,6 @@ main{
 }
 
 .titles{
-    padding-top: 80px;
     text-align: center;
     font-weight: 300;
 }
@@ -137,6 +136,9 @@ main{
     font-size: 1.5rem;
     line-height: 30px;
     padding: 1rem;
+}
+#first-section{
+    margin: 50px auto;
 }
 
 #first-section p{
@@ -183,7 +185,7 @@ main{
 }
 
 #first-section .caroussel .list .item .arrows button{
-    width: 50px;
+    width: 45px;
     height: 50px;
     break-before: 50%;
     border: 1px solid #659cdf55;
@@ -217,7 +219,7 @@ main{
     width: 35%;
     height: 100%;
     z-index: 2;
-    right: 15% ;
+    right: 20% ;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -323,6 +325,10 @@ footer p{
 
     .navbar .links li a::after{
         display: none;
+    }
+
+    #first-section .caroussel{
+        height: 35vh;
     }
 
     #first-section .caroussel .list .item .content h4{
