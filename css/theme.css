@@ -20,6 +20,7 @@ header{
     padding-left: 20px;
     display: flex;
     align-items: center;
+    z-index: 100;
 }
 
 header h1{
@@ -86,8 +87,11 @@ header h1 span{
 main{
     margin-top: 80px;
 }
+.section-welcome{
+    background-color: #fff;
+}
 .welcomeword { 
-    color: var(--color-title);
+    color: var(--header-bgcolor);
     text-align: center;
     
 }
@@ -134,15 +138,111 @@ main{
     line-height: 30px;
     padding: 1rem;
 }
-#first-section{
-    background-color: #fff;
-}
 
 #first-section p{
-    color: var(--header-bgcolor);
-}
-#second-section{
     color: var(--color-title);
+}
+
+#first-section h2{
+    color: var(--color-title);
+}
+
+#first-section h3{
+    display: flex;
+    color: var(--color-title);
+    padding-left: 10%;
+}
+#first-section .caroussel{
+    position: relative;
+    height: 80vh;
+    overflow: hidden;
+    z-index: 1;
+}
+
+#first-section .caroussel .list{
+    width: min(1200px, 90vw);
+    margin: auto;
+    height: 100%;
+    position: relative;
+}
+
+#first-section .caroussel .list .item{
+    position: absolute;
+    inset: 0;
+}
+#first-section .caroussel .list .item .arrows{
+    width: min(1200px, 90vw);
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -25px);
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+}
+
+#first-section .caroussel .list .item .arrows button{
+    width: 50px;
+    height: 50px;
+    break-before: 50%;
+    border: 1px solid #659cdf55;
+    background-color: #232442;
+    color: #fff7;
+    border-radius: 50%;
+    font-family: monospace;
+    font-size: large;
+    pointer-events: auto;
+    transition: 0.5s;
+}
+#first-section .caroussel .list .item .arrows button:hover{
+    border: solid 1px var(--hover-color);
+    color: var(--color-title);
+}
+
+#first-section .caroussel .list .item figure{
+    position: absolute;
+    right: 35%;
+    width: 40%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#first-section .caroussel .list .item figure img{
+    width: 100%;
+}
+
+#first-section .caroussel .list .item .content{
+    position: absolute;
+    width: 35%;
+    height: 100%;
+    z-index: 2;
+    right: 15% ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    gap: 20px;
+}
+
+#first-section .caroussel .list .item .content h4{
+    font-family: 'League Gothic';
+    font-size: 9rem;
+    line-height: 1em;
+    color: var(--color-title);
+}
+
+#first-section .caroussel .list .item .content .description{
+    color: #fff8;
+    max-width: 400px;
+    font-size: small;
+    text-align: right;
+}
+
+
+#second-section{
+    background-color: var(--color-title);
+    color: var(--header-bgcolor);
 }
 
 #third-section{
@@ -190,7 +290,7 @@ footer p{
         border-radius: 3px;
     }
     .navbar .links {
-        top: 81px;
+        top: 70px;
         right: 0;
         position: fixed;
         background-color: #fff;
@@ -223,6 +323,14 @@ footer p{
 
     .navbar .links li a::after{
         display: none;
+    }
+
+    #first-section .caroussel .list .item .content h4{
+        font-size: 4rem;
+    }
+
+    #first-section .caroussel .list .item .content .description{
+        font-size: 1rem;
     }
 
     
