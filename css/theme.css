@@ -112,11 +112,11 @@ main{
     
 }
 
-.texte-degrade {
+.section-welcome .welcomeword .texte-degrade {
     background-image: linear-gradient(to right, red, orange, yellow);
     color: transparent; /* Masquer la couleur du texte par défaut */
     background-clip: text;
-    font-size: 4rem;
+    font-size: 6rem;
   }
 
 .welcomeword p{
@@ -291,7 +291,7 @@ footer p{
         border-radius: 3px;
     }
     .navbar .links {
-        top: 80px;
+        top: 69px;
         right: 0;
         position: fixed;
         background-image: linear-gradient(to bottom, #0984e3, #74b9ff, #81ecec ) ;
@@ -301,7 +301,7 @@ footer p{
         height: 100vh;
         justify-content: start;
         text-align: left;
-        gap: 6rem;
+        gap: 4rem;
         margin-right: -100%;
         padding: 30px 40px;
         transition: all 0.5s ease;
@@ -345,7 +345,11 @@ footer p{
     
 }
 
-@media screen and (max-width: 466px) { 
+@media screen and (max-width: 466px) {
+    .navbar .links {
+        top: 80px;
+    }
+    
     header{
         padding: 40px 10px;
     }
@@ -357,6 +361,9 @@ footer p{
         height: 25vh;
     }
     #first-section .caroussel .list .item .content h4{
+        font-size: 3rem;
+    }
+    .section-welcome .welcomeword .texte-degrade{
         font-size: 3rem;
     }
 
