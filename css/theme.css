@@ -363,8 +363,11 @@ footer p{
     #first-section .caroussel .list .item .content h4{
         font-size: 3rem;
     }
+    #first-section .caroussel .list .item .content .description{
+        font-size: .7rem;
+    }
     .section-welcome .welcomeword .texte-degrade{
-        font-size: 3rem;
+        font-size: 2.8rem;
     }
 
 }
