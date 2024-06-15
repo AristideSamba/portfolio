@@ -8,6 +8,7 @@
     --hover-color: #0576ff;
     --color-title: #fafafafa;
     --header-bgcolor: #30363d;
+    --calculation: 1;
 }
 
 header{
@@ -96,7 +97,7 @@ main{
     
 }
 
-.welcomeword h1{
+.welcomeword h2{
     letter-spacing: 1.6rem;
     padding: 1.5rem;
 }
@@ -126,11 +127,10 @@ main{
 }
 
 .titles{
-    padding-top: 75px;
+    padding-top: 20px;
     text-align: center;
     font-weight: 300;
     color: var(--color-title);
-    border-top: 1px solid #fff7;
 }
 
 .my-paragraphs{
@@ -149,7 +149,8 @@ main{
     color: var(--color-title);
 }
 #first-section{
-    margin-bottom: 70px;
+    height: 70vh;
+    margin-bottom: 20px;
     border-top: 1px solid #fff7;
 }
 
@@ -168,7 +169,7 @@ main{
 }
 #first-section .caroussel{
     position: relative;
-    height: 80vh;
+    height: 50vh;
     overflow: hidden;
     z-index: 1;
 }
@@ -176,7 +177,7 @@ main{
 #first-section .caroussel .list{
     width: min(1200px, 90vw);
     margin: auto;
-    height: 100%;
+    height: 80%;
     position: relative;
 }
 
@@ -184,7 +185,7 @@ main{
     position: absolute;
     inset: 0;
 }
-#first-section .caroussel .list .item .arrows{
+#first-section .caroussel .list .arrows{
     width: min(1200px, 90vw);
     position: absolute;
     top: 52%;
@@ -196,7 +197,7 @@ main{
     justify-content: space-between;
 }
 
-#first-section .caroussel .list .item .arrows button{
+#first-section .caroussel .list .arrows button{
     width: 45px;
     height: 50px;
     break-before: 50%;
@@ -209,21 +210,53 @@ main{
     pointer-events: auto;
     transition: 0.5s;
 }
-#first-section .caroussel .list .item .arrows button:hover{
+#first-section .caroussel .list .arrows button:hover{
     border: solid 1px var(--hover-color);
     color: var(--color-title);
 }
 
+#first-section .caroussel .list .indicators{
+    position:absolute;
+    top: 110%;
+    height: 20px;
+    width: min(1200px, 90vw);
+    left: 55%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    pointer-events: none;
+    justify-content: end;
+    gap: 10px;
+
+}
+
+#first-section .caroussel .list .indicators ul{
+    display: flex;
+    gap: 10px;
+}
+#first-section .caroussel .list .indicators ul li{
+    width: 35px;
+    height: 4px;
+    background-color: #0576ff;
+    border-radius: 10px;
+    pointer-events: auto;
+    cursor: pointer;
+    transition: .5s;
+}
+#first-section .caroussel .list .indicators ul .active{
+    background-color: yellow;
+}
+
 #first-section .caroussel .list .item figure{
     position: absolute;
-    right: 35%;
+    left: 25%;
     width: 40%;
-    top: 50%;
+    top: 62%;
     transform: translateY(-50%);
 }
 
 #first-section .caroussel .list .item figure img{
-    width: 100%;
+    width: 65%;
 }
 
 #first-section .caroussel .list .item .content{
@@ -271,6 +304,49 @@ footer p{
     padding: 20px;
 }
 
+body .caroussel .list .item{
+    transition: .5s;
+    transform: translateX(calc(100vw - var(--calculation)));
+    opacity: 0; 
+}
+body .caroussel .list .item figure img{
+    transition: .5s;
+    transition-delay: .3s;
+}
+body .caroussel .list .item figure img,
+body .caroussel .list .item .content h4,
+body .caroussel .list .item .content .description{
+    transform: translateX(calc(200px  * var(--calculation)));
+    transition: .7s;
+    opacity: 0;
+    transition-delay: .3s;
+}
+
+body .caroussel .list .item figure img{
+    transition-delay: .3s;
+}
+body .caroussel .list .item .content h4{
+    transition-delay: .5s;
+}
+
+body .caroussel .list .item .content .description{
+    transition-delay: .7s;
+}
+
+body .caroussel .list .active{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+body .caroussel .list .active .content h4,
+body .caroussel .list .active .content .description,
+body .caroussel .list .active figure img{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
 @media screen and (max-width: 1080px) { 
     .menu-icon{
         display: block;
@@ -294,14 +370,15 @@ footer p{
         top: 69px;
         right: 0;
         position: fixed;
-        background-image: linear-gradient(to bottom, #0984e3, #74b9ff, #81ecec ) ;
+        background-color: rgba(198, 194, 194, 0.588) ;
+        backdrop-filter: blur(4px);
         display: flex;
         flex-direction: column;
         width: 100%;
         height: 100vh;
         justify-content: start;
         text-align: left;
-        gap: 4rem;
+        gap: 1rem;
         margin-right: -100%;
         padding: 30px 40px;
         transition: all 0.5s ease;
@@ -310,13 +387,20 @@ footer p{
     .links.mobile-menu{
         margin-right: 0;
     }
-
+    .navbar .links li{
+        width: 100%;
+        background-color: rgba(22, 21, 21, 0.598);
+        backdrop-filter: blur(10px);
+        border-radius: 10px;
+        padding: 15px 18px;
+    }
 
     .navbar .links li a{
         color: var(--color-title);
         font-size: 2.5rem;
-        font-weight: 600;
-        letter-spacing: 0.6rem;
+        font-weight: 200;
+        letter-spacing: 0.8rem;
+        border-radius: 10px;
     }
     .navbar .links li a:hover{
         color: #d63031;
@@ -325,9 +409,12 @@ footer p{
     .navbar .links li a::after{
         display: none;
     }
+    #first-section{
+        height: 40vh;
+    }
 
     #first-section .caroussel{
-        height: 70vh;
+        height: 30vh;
     }
 
     #first-section .caroussel .list .item .content h4{
@@ -339,13 +426,13 @@ footer p{
     }
 
     #first-section .caroussel .list .item figure img{
-        width: 120%;
+        width: 80%;
     }
 
     
 }
 
-@media screen and (max-width: 466px) {
+@media screen and (max-width: 500px) {
     .navbar .links {
         top: 80px;
     }
@@ -362,6 +449,9 @@ footer p{
     }
     #first-section .caroussel .list .item .content h4{
         font-size: 3rem;
+    }
+    #first-section .caroussel .list .item figure img{
+        width: 130%;
     }
     #first-section .caroussel .list .item .content .description{
         font-size: .7rem;
