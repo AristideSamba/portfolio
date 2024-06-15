@@ -130,7 +130,7 @@ main{
     padding-top: 20px;
     text-align: center;
     font-weight: 300;
-    color: var(--color-title);
+    color: var(--header-bgcolor);
 }
 
 .my-paragraphs{
@@ -149,9 +149,9 @@ main{
     color: var(--color-title);
 }
 #first-section{
-    height: 70vh;
+    height: 75vh;
     margin-bottom: 20px;
-    border-top: 1px solid #fff7;
+    background-color: #1c1d32;;
 }
 
 #first-section p{
@@ -370,8 +370,8 @@ body .caroussel .list .active figure img{
         top: 69px;
         right: 0;
         position: fixed;
-        background-color: rgba(198, 194, 194, 0.588) ;
-        backdrop-filter: blur(4px);
+        background-color: rgba(95, 94, 94, 0.588) ;
+        backdrop-filter: blur(10px);
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -389,18 +389,17 @@ body .caroussel .list .active figure img{
     }
     .navbar .links li{
         width: 100%;
-        background-color: rgba(22, 21, 21, 0.598);
+        background-color: rgba(8, 8, 8, 0.598);
         backdrop-filter: blur(10px);
-        border-radius: 10px;
-        padding: 15px 18px;
+        border-radius: 16px;
+        padding: 20px 18px;
     }
 
     .navbar .links li a{
         color: var(--color-title);
-        font-size: 2.5rem;
+        font-size: 1.8rem;
         font-weight: 200;
-        letter-spacing: 0.8rem;
-        border-radius: 10px;
+        letter-spacing: 0.5rem;
     }
     .navbar .links li a:hover{
         color: #d63031;
