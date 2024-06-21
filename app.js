@@ -23,7 +23,7 @@ const setSlider = () => {
   if (dotActiveOld){
       dotActiveOld.classList.remove('active');
   }
-  
+  dots[active].classList.add('active');
 }
 
 setSlider();
@@ -33,6 +33,11 @@ nextBtn.onclick = () => {
   setSlider();
 }
 
+prevBtn.onclick = () => {
+  active = active -1 < firstPosition ? lastPosition : active -1;
+  caroussel.style.setProperty('--calculation', -1);
+  setSlider();
+}
 
 menuDeroulant.addEventListener('click', ()=> {
   navLinks.classList.toggle('mobile-menu')
