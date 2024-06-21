@@ -149,7 +149,7 @@ main{
     color: var(--color-title);
 }
 #first-section{
-    height: 100vh;
+    height: 110vh;
     margin-bottom: 20px;
     background-color: #1c1d32;;
 }
@@ -173,10 +173,10 @@ main{
 {
     display: flex;
     justify-content: center;
+    margin: 20px auto;
 }
 #first-section .os-langues img{
-
-    width: 8vw;
+    width: 10vw;
 }
 
 #first-section p{
@@ -242,7 +242,7 @@ main{
 
 #first-section .caroussel .list .indicators{
     position:absolute;
-    top: 110%;
+    top: 115%;
     height: 20px;
     width: min(1200px, 90vw);
     left: 55%;
@@ -260,8 +260,8 @@ main{
     gap: 10px;
 }
 #first-section .caroussel .list .indicators ul li{
-    width: 35px;
-    height: 4px;
+    width: 30px;
+    height: 3px;
     background-color: #0576ff;
     border-radius: 10px;
     pointer-events: auto;
@@ -281,7 +281,7 @@ main{
 }
 
 #first-section .caroussel .list .item figure img{
-    width: 65%;
+    width: 55%;
 }
 
 #first-section .caroussel .list .item .content{
@@ -306,7 +306,7 @@ main{
 }
 
 #first-section .caroussel .list .item .content .description{
-    color: #fff8;
+    color: #fff9;
     max-width: 400px;
     font-size: small;
     text-align: right;
@@ -416,7 +416,7 @@ body .caroussel .list .active figure img{
         width: 100%;
         background-color: rgba(8, 8, 8, 0.598);
         backdrop-filter: blur(10px);
-        border-radius: 16px;
+        border-radius: 22px;
         padding: 20px 18px;
     }
 
@@ -434,7 +434,7 @@ body .caroussel .list .active figure img{
         display: none;
     }
     #first-section{
-        height: 60vh;
+        height: 80vh;
     }
 
     #first-section .caroussel{
@@ -469,10 +469,15 @@ body .caroussel .list .active figure img{
         letter-spacing: 0.2rem;
     }
     #first-section{
-        height: 55vh;
+        height: 60vh;
     }
     #first-section .caroussel{
         height: 25vh;
+    }
+
+    #first-section .caroussel .list .item .content{
+        left: 18%;
+        top: 45%;
     }
     #first-section .caroussel .list .item .content h4{
         font-size: 3rem;
