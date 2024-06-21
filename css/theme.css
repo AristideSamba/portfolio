@@ -242,7 +242,7 @@ main{
 
 #first-section .caroussel .list .indicators{
     position:absolute;
-    top: 115%;
+    top: 111%;
     height: 20px;
     width: min(1200px, 90vw);
     left: 55%;
