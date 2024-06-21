@@ -500,14 +500,14 @@ body .caroussel .list .active figure img{
     }
 
     #first-section .caroussel .list .item .content{
-        left: 18%;
-        top: 45%;
+        left: 10%;
+        top: 40%;
     }
     #first-section .caroussel .list .item .content h4{
         font-size: 3rem;
     }
     #first-section .caroussel .list .item figure img{
-        width: 130%;
+        width: 90%;
     }
     #first-section .caroussel .list .item .content .description{
         font-size: .7rem;
