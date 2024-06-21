@@ -242,7 +242,7 @@ main{
 
 #first-section .caroussel .list .indicators{
     position:absolute;
-    top: 111%;
+    top: 110%;
     height: 20px;
     width: min(1200px, 90vw);
     left: 55%;
@@ -371,6 +371,30 @@ body .caroussel .list .active figure img{
     opacity: 1;
 }
 
+#second-section .mes-softs{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    justify-content: center;
+    gap: 4%;
+}
+
+#second-section .mes-softs .colone{
+     display: flex;
+     flex-direction: column; 
+     justify-content: center; 
+     align-items: center;
+     padding: 10px; 
+}
+
+
+#second-section .mes-softs h4,
+#second-section .mes-softs p{
+    text-align: center;
+}
+
+#second-section .mes-softs img{
+    width: 10vw;
+}
 
 @media screen and (max-width: 1080px) { 
     .menu-icon{
@@ -492,4 +516,9 @@ body .caroussel .list .active figure img{
         font-size: 2.8rem;
     }
 
+    #second-section .mes-softs{
+        display: flex;
+        flex-direction: column; 
+    }
+    
 }
