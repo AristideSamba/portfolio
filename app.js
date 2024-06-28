@@ -10,6 +10,13 @@ let dots = indicators.querySelectorAll('ul li');
 let active = 0;
 let firstPosition = 0;
 let lastPosition = items.length -1;
+let autoPlay;
+const startAutoPlay = () => {
+  clearInterval(autoPlay);
+  autoPlay = setInterval (() => {
+    nextBtn.click();
+  }, 5000);
+}
 
 
 const setSlider = () => {
@@ -24,6 +31,7 @@ const setSlider = () => {
       dotActiveOld.classList.remove('active');
   }
   dots[active].classList.add('active');
+  startAutoPlay();
 }
 
 setSlider();
@@ -34,7 +42,7 @@ nextBtn.onclick = () => {
 }
 
 prevBtn.onclick = () => {
-  active = active -1 < firstPosition ? lastPosition : active -1;
+  active = active - 1 < firstPosition ? lastPosition : active - 1;
   caroussel.style.setProperty('--calculation', -1);
   setSlider();
 }

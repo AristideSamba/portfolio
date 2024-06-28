@@ -127,7 +127,6 @@ main{
 }
 
 .titles{
-    padding-top: 20px;
     text-align: center;
     font-weight: 300;
     color: var(--header-bgcolor);
@@ -149,9 +148,16 @@ main{
     color: var(--color-title);
 }
 #first-section{
-    height: 110vh;
-    margin-bottom: 20px;
-    background-color: #1c1d32;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+#first-section .container{
+    padding: 20px 50px;
+    background-color: #1c1d32;
+    border-radius: 10px;
 }
 
 #first-section .os-langues{
@@ -323,12 +329,6 @@ footer{
     justify-content: center;
 }
 
-footer p{
-    color: var(--color-title);
-    text-align: center;
-    padding: 20px;
-}
-
 body .caroussel .list .item{
     transition: .5s;
     transform: translateX(calc(100vw - var(--calculation)));
@@ -390,10 +390,15 @@ body .caroussel .list .active figure img{
 #second-section .mes-softs h4,
 #second-section .mes-softs p{
     text-align: center;
+    padding-top: 10px;
 }
 
 #second-section .mes-softs img{
     width: 10vw;
+}
+footer p{
+    color: var(--color-title);
+    text-align: center;
 }
 
 @media screen and (max-width: 1080px) { 
@@ -492,9 +497,15 @@ body .caroussel .list .active figure img{
         font-size: 2.5rem;
         letter-spacing: 0.2rem;
     }
+
     #first-section{
-        height: 60vh;
+        margin: -60px 0;
     }
+
+    #first-section .container{
+        padding: 10px ;
+    }
+
     #first-section .caroussel{
         height: 25vh;
     }
