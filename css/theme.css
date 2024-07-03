@@ -81,27 +81,43 @@ header h1 span{
     transform: scale(1);
 }
 
+/* Les icone burger menu et ferméture*/
 .menu-icon{
+    display: none;
+}
+.menu-burger-icon-fermer{
     display: none;
 }
 
 main{
     margin-top: 80px;
 }
+
+/* Mot de bienvenue*/
 .section-welcome{
     background-color: #fff;
 }
 .welcomeword { 
     color: var(--header-bgcolor);
-    text-align: center;
-    
+    text-align: center;  
 }
-
 .welcomeword h2{
     letter-spacing: 1.6rem;
     padding: 1.5rem;
 }
+.section-welcome .welcomeword .texte-degrade {
+    background-image: linear-gradient(to right, red, orange, yellow);
+    color: transparent; /* Masquer la couleur du texte par défaut */
+    background-clip: text;
+    font-size: 6rem;
+  }
+.welcomeword p{
+    font-size: 1.8rem;
+    font-weight: 300;
+    padding: 1.5rem;
+}
 
+/* Ligne d'espacement bleue*/
 .line{
     display: flex;
     content: "";
@@ -113,19 +129,13 @@ main{
     
 }
 
-.section-welcome .welcomeword .texte-degrade {
-    background-image: linear-gradient(to right, red, orange, yellow);
-    color: transparent; /* Masquer la couleur du texte par défaut */
-    background-clip: text;
-    font-size: 6rem;
-  }
-
-.welcomeword p{
-    font-size: 1.8rem;
-    font-weight: 300;
-    padding: 1.5rem;
+#espace1{
+    padding-top: 49.5px;
 }
-
+#espace2{
+    padding-top: 70px;
+}
+/* Les titre */
 .titles{
     text-align: center;
     font-weight: 300;
@@ -147,19 +157,19 @@ main{
     padding: 1rem;
     color: var(--color-title);
 }
+
+/* Première section Hard-skills */
 #first-section{
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 20px;
 }
-
 #first-section .container{
     padding: 20px 50px;
     background-color: #1c1d32;
     border-radius: 10px;
 }
-
 #first-section .os-langues{
     display: grid;
     grid-template-columns: 30% 30%;
@@ -167,24 +177,22 @@ main{
     justify-content: center;
     margin: 20px auto;
 }
-
 #first-section .os-langues .os h3,
 #first-section .os-langues .langues h3{
     display: flex;
     justify-content: center;
 }
-
 #first-section .os-langues .os .images,
 #first-section .os-langues .langues .images
 {
     display: flex;
     justify-content: center;
     margin: 20px auto;
+    gap: 10%;
 }
 #first-section .os-langues img{
     width: 10vw;
 }
-
 #first-section p{
     color: var(--color-title);
 }
@@ -192,7 +200,6 @@ main{
 #first-section h2{
     color: var(--color-title);
 }
-
 #first-section h3{
     display: flex;
     color: var(--color-title);
@@ -204,7 +211,6 @@ main{
     overflow: hidden;
     z-index: 1;
 }
-
 #first-section .caroussel .list{
     width: min(1200px, 90vw);
     margin: auto;
@@ -227,7 +233,6 @@ main{
     display: flex;
     justify-content: space-between;
 }
-
 #first-section .caroussel .list .arrows button{
     width: 45px;
     height: 50px;
@@ -260,7 +265,6 @@ main{
     gap: 10px;
 
 }
-
 #first-section .caroussel .list .indicators ul{
     display: flex;
     gap: 10px;
@@ -303,30 +307,17 @@ main{
     align-items: end;
     gap: 20px;
 }
-
 #first-section .caroussel .list .item .content h4{
     font-family: 'League Gothic';
     font-size: 9rem;
     line-height: 1em;
     color: var(--color-title);
 }
-
 #first-section .caroussel .list .item .content .description{
     color: #fff9;
     max-width: 400px;
     font-size: small;
     text-align: right;
-}
-
-footer{
-    position: absolute;
-    background-color: var(--header-bgcolor);
-    margin-bottom: 0;
-    align-items: center;
-    width: 100%;
-    height: 40px;
-    display: flex;
-    justify-content: center;
 }
 
 body .caroussel .list .item{
@@ -371,6 +362,7 @@ body .caroussel .list .active figure img{
     opacity: 1;
 }
 
+/* Deuxième section Soft-skills */ 
 #second-section .mes-softs{
     display: grid;
     grid-template-columns: 20% 20% 20% 20%;
@@ -384,9 +376,10 @@ body .caroussel .list .active figure img{
      justify-content: center; 
      align-items: center;
      padding: 10px; 
+     background-color: var(--timberwolf);
+     border-radius: 20px;
+     box-shadow: -5px 10px 15px rgba(0, 0, 0, 0.3), 5px 10px 15px rgba(0, 0, 0, 0.3);
 }
-
-
 #second-section .mes-softs h4,
 #second-section .mes-softs p{
     text-align: center;
@@ -396,11 +389,25 @@ body .caroussel .list .active figure img{
 #second-section .mes-softs img{
     width: 10vw;
 }
+
+/* Pied de page */ 
+footer{
+    position: absolute;
+    background-color: var(--header-bgcolor);
+    margin-bottom: 0;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
 footer p{
     color: var(--color-title);
     text-align: center;
 }
 
+
+/* Les medias screen */
 @media screen and (max-width: 1080px) { 
     .menu-icon{
         display: block;
@@ -410,16 +417,20 @@ footer p{
         transition: .4s;
             
     }
+
+    .menu-burger-icon-fermer{
+        display: none;
+        position: absolute;
+        right: 2px;
+        width: 50px;
+        transition: .4s;
+    }
     
     .menu-icon:hover{
         cursor: pointer;
         
     }
     
-    .menu-icon:active{
-        background-color: #f3f5f686;
-        border-radius: 3px;
-    }
     .navbar .links {
         top: 69px;
         right: 0;
@@ -482,6 +493,13 @@ footer p{
         width: 75%;
     }
 
+    #espace1{
+        padding-top: 3vh;
+    }
+    #espace2{
+        padding-top: 70px;
+    }
+
     
 }
 
@@ -529,7 +547,11 @@ footer p{
 
     #second-section .mes-softs{
         display: flex;
-        flex-direction: column; 
+        flex-direction: column;
+        gap: 20px; 
+    }
+    #second-section .mes-softs .colone{
+        margin: auto 15px;
     }
     
 }
