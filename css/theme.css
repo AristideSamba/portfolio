@@ -570,13 +570,6 @@ footer p{
         width: 75%;
     }
 
-    #espace1{
-        padding-top: 3vh;
-    }
-    #espace2{
-        padding-top: 70px;
-    }
-
     
 }
 
@@ -631,4 +624,9 @@ footer p{
         margin: auto 15px;
     }
     
+    #third-section .mes-formations{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
 }
