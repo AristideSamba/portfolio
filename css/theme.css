@@ -628,5 +628,7 @@ footer p{
         display: flex;
         flex-direction: column;
         gap: 20px;
+        margin: auto 25px;
     }
+
 }
