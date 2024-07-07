@@ -17,7 +17,7 @@ header{
     top: 0;
     left:0;
     background-color: #161b22;
-    height: 70px;
+    height: 65px;
     padding-left: 20px;
     display: flex;
     align-items: center;
@@ -35,7 +35,7 @@ header h1 span{
     font-weight: 500;
     color: var(--hover-color);
 }
-
+/*La navbar*/
 .navbar{
     position: absolute;
     display: flex;
@@ -96,6 +96,7 @@ main{
 /* Mot de bienvenue*/
 .section-welcome{
     background-color: #fff;
+    margin-bottom: -60px;
 }
 .welcomeword { 
     color: var(--header-bgcolor);
@@ -129,12 +130,6 @@ main{
     
 }
 
-#espace1{
-    padding-top: 49.5px;
-}
-#espace2{
-    padding-top: 70px;
-}
 /* Les titre */
 .titles{
     text-align: center;
@@ -160,10 +155,13 @@ main{
 
 /* Première section Hard-skills */
 #first-section{
+    position: relative;
+    padding-top: 64px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 20px;
+    margin-bottom: -30px;
 }
 #first-section .container{
     padding: 20px 50px;
@@ -363,6 +361,10 @@ body .caroussel .list .active figure img{
 }
 
 /* Deuxième section Soft-skills */ 
+
+#second-section{
+    padding-top: 64px;
+}
 #second-section .mes-softs{
     display: grid;
     grid-template-columns: 20% 20% 20% 20%;
@@ -390,6 +392,81 @@ body .caroussel .list .active figure img{
     width: 10vw;
 }
 
+/*Third-section*/
+#third-section{
+    background-color: #1c1d32;
+    padding-top: 65px;
+    padding-bottom: 30px;
+}
+
+#third-section .titles{
+    color: var(--color-title);
+}
+
+#third-section .mes-formations{
+    display: grid;
+    grid-template-columns: 20% 20% 20%;
+    justify-content: center;
+    gap: 8%;
+}
+
+#third-section .mes-formations .colone1{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    background-image:url(../asset/sciences.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    padding: 10px; 
+    border-radius: 20px;
+    color: var(--color-title);
+}
+
+#third-section .mes-formations .colone2{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    background-image:url(../asset/télécoms.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    padding: 10px; 
+    border-radius: 20px;
+    color: var(--color-title);
+}
+
+#third-section .mes-formations .colone3{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    background-image:url(../asset/clavier.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    padding: 10px; 
+    border-radius: 20px;
+    color: var(--color-title);
+}
+
+#third-section .mes-formations img{
+    width: 10vw;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+#third-section .mes-formations h4,
+#third-section .mes-formations p{
+    text-align: center;
+    padding-top: 10px;
+}
+
+/* Seventh-section */
+#seventh-section{
+    background-image: url(../asset/clavier.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 /* Pied de page */ 
 footer{
     position: absolute;
