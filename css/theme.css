@@ -364,6 +364,7 @@ body .caroussel .list .active figure img{
 
 #second-section{
     padding-top: 64px;
+    margin-bottom: 30PX;
 }
 #second-section .mes-softs{
     display: grid;
