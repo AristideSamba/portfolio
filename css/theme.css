@@ -390,7 +390,7 @@ body .caroussel .list .active figure img{
 }
 
 #second-section .mes-softs img{
-    width: 10vw;
+    width: 60px;
 }
 
 /*Third-section*/
@@ -441,7 +441,7 @@ body .caroussel .list .active figure img{
     display: flex;
     flex-direction: column; 
     justify-content: center; 
-    background-image:url(../asset/clavier.jpg) ;
+    background-image:url(../asset/clavier.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     align-items: center;
@@ -450,10 +450,23 @@ body .caroussel .list .active figure img{
     color: var(--color-title);
 }
 
-#third-section .mes-formations img{
-    width: 10vw;
+#third-section .mes-formations p{
+    font-size: 1.5rem;
+}
+#third-section .mes-formations .img-bg{
+    width: 70px;
+    height: 70px;
     background-color: #fff;
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#third-section .mes-formations .img-bg img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
 }
 
 #third-section .mes-formations h4,
@@ -462,12 +475,28 @@ body .caroussel .list .active figure img{
     padding-top: 10px;
 }
 
+/*Fourth Section*/
+
+#fourth-section{
+    margin: 20px 130px;
+}
+
+#fourth-section h3{
+    border: .2rem solid var(--header-bgcolor);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#fourth-section p{
+    color: var(--header-bgcolor);
+}
+
 /* Seventh-section */
 #seventh-section{
-    background-image: url(../asset/clavier.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #30363d;
 }
+
+
 /* Pied de page */ 
 footer{
     position: absolute;
