@@ -97,3 +97,14 @@ window.matchMedia('(min-width: 1080px)').addEventListener('change', (event) => {
   }
 });
 
+window.onload = () => {
+  window.addEventListener("scroll", () => {
+    let hauteur = document.documentElement.scrollHeight - window.innerHeight;
+    let position = window.scrollY;
+    let largeur = document.documentElement.clientWidth;
+
+    let scroller = (position / hauteur) * largeur;
+
+    document.getElementById("scroller").style.width = scroller + "px";
+  })
+}

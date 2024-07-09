@@ -81,6 +81,19 @@ header h1 span{
     transform: scale(1);
 }
 
+/*Scroller*/
+
+#scroller{
+    position: fixed;
+    top: 65px;
+    left: 0;
+    width: 0;
+    height: 4px;
+    z-index: 1000;
+    background-color: #0576ff;
+}
+
+
 /* Les icone burger menu et ferméture*/
 .menu-icon{
     display: none;
@@ -616,6 +629,9 @@ footer p{
         letter-spacing: 0.2rem;
     }
 
+    #scroller{
+        top:80px;
+    }
     #first-section{
         margin: -60px 0;
     }
@@ -661,4 +677,11 @@ footer p{
         margin: auto 25px;
     }
 
+    #fourth-section{
+        margin: 10px 10px;
+    }
+
+    #fourth-section h3{
+        text-align: center;
+    }
 }
