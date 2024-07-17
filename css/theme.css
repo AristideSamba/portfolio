@@ -658,6 +658,9 @@ footer p{
     .monlogo img{
         display: none;
     }
+
+    #second-section {
+        height: 90vh;
     
 }
 
@@ -707,7 +710,7 @@ footer p{
     }
     #second-section {
     margin: auto 5%;
-    height: 95vh;
+    height: 100vh;
     
     }
 
@@ -743,4 +746,11 @@ footer p{
     #fourth-section h3{
         text-align: center;
     }
+}
+
+@media screen and (max-width: 400px) {
+    #second-section {
+        height: 125vh;
+        
+        }
 }
