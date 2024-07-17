@@ -108,3 +108,11 @@ window.onload = () => {
     document.getElementById("scroller").style.width = scroller + "px";
   })
 }
+
+const downloadLink = document.querySelector('.download');
+
+downloadLink.addEventListener('click', (event) => {
+  if (!confirm('Voulez-vous télécharger mon CV ?')) {
+    event.preventDefault(); // Prevent download if the user cancels
+  }
+});

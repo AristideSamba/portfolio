@@ -23,12 +23,43 @@ header{
     align-items: center;
     z-index: 100;
 }
-
+.monlogo{
+    position: absolute;
+    display: flex;
+    left: 2%;
+    border-radius: 50%;
+}
+.monlogo img{
+    width: 10vw;
+    height: 14vh;
+}
 header h1{
     color: var(--color-title);
     font-size: 3rem;
     font-weight:lighter;
     letter-spacing: 0.8rem;
+}
+header .download{
+    position: absolute;
+    right: 2%;
+    border-radius: 10px;
+}
+
+header .download a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0576ff;
+    font-size: 1.5rem;
+    margin: auto 8px;
+    border-radius: 15px;
+    transition: ease-in-out .3s;
+}
+
+header .download a:hover{
+    background-color: rgba(95, 94, 94, 0.588) ;
+    backdrop-filter: blur(10px);
+    color: var(--color-title);
 }
 
 header h1 span{
@@ -44,7 +75,7 @@ header h1 span{
     height: 100px;
     top: auto;
     bottom: auto;
-    left: 100px;
+    right: 10%;
     justify-content: end;
     align-items: center;
   }
@@ -376,34 +407,43 @@ body .caroussel .list .active figure img{
 /* Deuxième section Soft-skills */ 
 
 #second-section{
+    position: relative;
     padding-top: 64px;
-    margin-bottom: 30PX;
+    margin: auto 20%;
+    height: 120vh;
+    overflow: hidden;
 }
 #second-section .mes-softs{
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20%;
+    display: block;
     justify-content: center;
-    gap: 4%;
+    align-items: center;
 }
 
 #second-section .mes-softs .colone{
+    position: relative;
      display: flex;
-     flex-direction: column; 
-     justify-content: center; 
-     align-items: center;
+     flex-direction: row; 
      padding: 10px; 
-     background-color: var(--timberwolf);
-     border-radius: 20px;
-     box-shadow: -5px 10px 15px rgba(0, 0, 0, 0.3), 5px 10px 15px rgba(0, 0, 0, 0.3);
+
 }
-#second-section .mes-softs h4,
-#second-section .mes-softs p{
-    text-align: center;
+
+#second-section .mes-softs .colone .contenu{
+    border-left: solid .1rem #0576ff;
+    border-top: solid .1rem #0576ff;
+    margin-left: 20%;
+    padding-left: 5%;
     padding-top: 10px;
+}
+#second-section .mes-softs .colone .contenu h4,
+#second-section .mes-softs .colone .contenu p{
+    text-align: left;
 }
 
 #second-section .mes-softs img{
-    width: 60px;
+    width: 8vw;
+    background-color: var(--timberwolf);
+    border-radius: 20px;
+    box-shadow: -5px 10px 15px rgba(0, 0, 0, 0.3), 5px 10px 15px rgba(0, 0, 0, 0.3);
 }
 
 /*Third-section*/
@@ -529,6 +569,9 @@ footer p{
 
 /* Les medias screen */
 @media screen and (max-width: 1080px) { 
+    header .download{
+        display: none;
+    }
     .menu-icon{
         display: block;
         position: absolute;
@@ -612,7 +655,9 @@ footer p{
     #first-section .caroussel .list .item figure img{
         width: 75%;
     }
-
+    .monlogo img{
+        display: none;
+    }
     
 }
 
@@ -660,6 +705,16 @@ footer p{
     .section-welcome .welcomeword .texte-degrade{
         font-size: 2.8rem;
     }
+    #second-section {
+    margin: auto 5%;
+    height: 95vh;
+    
+    }
+
+    #second-section .mes-softs .colone .contenu{
+        margin-left: 10%;
+        padding-left: 3%;
+    }
 
     #second-section .mes-softs{
         display: flex;
@@ -668,6 +723,10 @@ footer p{
     }
     #second-section .mes-softs .colone{
         margin: auto 15px;
+    }
+
+    #second-section .mes-softs img{
+        height: 7vh;
     }
     
     #third-section .mes-formations{
