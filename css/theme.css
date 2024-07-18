@@ -410,7 +410,7 @@ body .caroussel .list .active figure img{
     position: relative;
     padding-top: 64px;
     margin: auto 20%;
-    height: 120vh;
+    height: 130vh;
     overflow: hidden;
 }
 #second-section .mes-softs{
@@ -430,6 +430,7 @@ body .caroussel .list .active figure img{
 #second-section .mes-softs .colone .contenu{
     border-left: solid .1rem #0576ff;
     border-top: solid .1rem #0576ff;
+    border-radius: 10px;
     margin-left: 20%;
     padding-left: 5%;
     padding-top: 10px;
@@ -566,6 +567,28 @@ footer p{
     text-align: center;
 }
 
+[class*="reveal-"]{
+opacity: 0;
+transform: translateY(30px);
+}
+
+.reveal-visible{
+    opacity: 1;
+    transform: translateY(0);
+    transition: 1s cubic-bezier(.5, 0, 0, 1);
+}
+
+.reveal-2{
+    transition-delay: .1s;
+}
+
+.reveal-3{
+    transition-delay: .2s;
+}
+
+.reveal-4{
+    transition-delay: .3s;
+}
 
 /* Les medias screen */
 @media screen and (max-width: 1080px) { 
