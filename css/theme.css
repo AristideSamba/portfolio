@@ -410,7 +410,7 @@ body .caroussel .list .active figure img{
     position: relative;
     padding-top: 64px;
     margin: auto 20%;
-    height: 130vh;
+    height: 140vh;
     overflow: hidden;
 }
 #second-section .mes-softs{
@@ -421,17 +421,17 @@ body .caroussel .list .active figure img{
 
 #second-section .mes-softs .colone{
     position: relative;
-     display: flex;
-     flex-direction: row; 
+     display: flex; 
      padding: 10px; 
-
+     margin-bottom: 20px;
 }
 
 #second-section .mes-softs .colone .contenu{
     border-left: solid .1rem #0576ff;
     border-top: solid .1rem #0576ff;
     border-radius: 10px;
-    margin-left: 20%;
+    margin-left: 25px;
+    margin-right: 25px;
     padding-left: 5%;
     padding-top: 10px;
 }
@@ -442,10 +442,10 @@ body .caroussel .list .active figure img{
 
 #second-section .mes-softs img{
     width: 8vw;
-    background-color: var(--timberwolf);
+    background-color: #232442;
     border-radius: 20px;
-    box-shadow: -5px 10px 15px rgba(0, 0, 0, 0.3), 5px 10px 15px rgba(0, 0, 0, 0.3);
 }
+
 
 /*Third-section*/
 #third-section{
