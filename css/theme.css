@@ -12,15 +12,10 @@
 }
 
 header{
-    position: fixed;
     width: 100%;
     top: 0;
     left:0;
-    background-color: #161b22;
-    height: 65px;
-    padding-left: 20px;
-    display: flex;
-    align-items: center;
+    height: 100px;
     z-index: 100;
 }
 .monlogo{
@@ -66,17 +61,32 @@ header h1 span{
     color: var(--hover-color);
 }
 /*La navbar*/
-.navbar{
-    position: absolute;
+.second-navbar{
+    position: fixed;
     display: flex;
     width: 100%;
-    max-width: 1200px;
-    height: 100px;
-    top: auto;
-    bottom: auto;
-    right: 10%;
-    justify-content: end;
+    height: 80px;
+    background-color: var(--timberwolf);
+    top: 0;
     align-items: center;
+    z-index: 100;
+}
+.second-navbar .monlogo{
+    left: 45%;
+}
+.navbar{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 70px;
+    top: 80px;
+    left: 0;
+    right: 0;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #161b22;
+    padding: auto 30px;
+    z-index: 50;
   }
 
 .navbar .links{
@@ -115,7 +125,7 @@ header h1 span{
 
 #scroller{
     position: fixed;
-    top: 65px;
+    top: 80px;
     left: 0;
     width: 0;
     height: 2px;
@@ -581,9 +591,6 @@ transform: translateY(30px);
 
 /* Les medias screen */
 @media screen and (max-width: 1080px) { 
-    header .download{
-        display: none;
-    }
     .menu-icon{
         display: block;
         position: absolute;
@@ -607,7 +614,7 @@ transform: translateY(30px);
     }
     
     .navbar .links {
-        top: 69px;
+        top: 150%;
         right: 0;
         position: fixed;
         background-color: rgba(95, 94, 94, 0.588) ;
@@ -622,6 +629,7 @@ transform: translateY(30px);
         margin-right: -100%;
         padding: 30px 15px;
         transition: all 0.3s ease;
+        z-index: 10;
     }
 
     .links.mobile-menu{
@@ -642,7 +650,7 @@ transform: translateY(30px);
         letter-spacing: 0.5rem;
     }
     .navbar .links li a:hover{
-        color: #d63031;
+        color: #0576ff;
     }
 
     .navbar .links li a::after{
@@ -667,9 +675,13 @@ transform: translateY(30px);
     #first-section .caroussel .list .item figure img{
         width: 75%;
     }
+
+    .second-navbar .monlogo{
+        left: 40%;
+    }
     .monlogo img{
-        width: 10%;
-        height: 10%;
+        width: 40%;
+        height: 40%;
     }
 
     #second-section {
@@ -679,12 +691,9 @@ transform: translateY(30px);
 
 @media screen and (max-width: 500px) {
     .navbar .links {
-        top: 80px;
+        top: 150px;
     }
     
-    header{
-        padding: 40px 10px;
-    }
     header h1{
         font-size: 2.5rem;
         letter-spacing: 0.2rem;
