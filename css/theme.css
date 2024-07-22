@@ -27,7 +27,6 @@ header{
     position: absolute;
     display: flex;
     left: 2%;
-    border-radius: 50%;
 }
 .monlogo img{
     width: 10vw;
@@ -119,7 +118,7 @@ header h1 span{
     top: 65px;
     left: 0;
     width: 0;
-    height: 4px;
+    height: 2px;
     z-index: 1000;
     background-color: #0576ff;
 }
@@ -410,7 +409,7 @@ body .caroussel .list .active figure img{
     position: relative;
     padding-top: 64px;
     margin: auto 20%;
-    height: 140vh;
+    height: 130vh;
     overflow: hidden;
 }
 #second-section .mes-softs{
@@ -451,7 +450,7 @@ body .caroussel .list .active figure img{
 #third-section{
     background-color: #1c1d32;
     padding-top: 65px;
-    padding-bottom: 30px;
+    padding-bottom: 2%;
 }
 
 #third-section .titles{
@@ -465,42 +464,15 @@ body .caroussel .list .active figure img{
     gap: 8%;
 }
 
-#third-section .mes-formations .colone1{
+#third-section .mes-formations .colone{
     display: flex;
     flex-direction: column; 
     justify-content: center; 
-    background-image:url(../asset/sciences.jpg) ;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #30363d; ;
     align-items: center;
     padding: 10px; 
-    border-radius: 20px;
-    color: var(--color-title);
-}
-
-#third-section .mes-formations .colone2{
-    display: flex;
-    flex-direction: column; 
-    justify-content: center; 
-    background-image:url(../asset/télécoms.jpg) ;
-    background-repeat: no-repeat;
-    background-size: cover;
-    align-items: center;
-    padding: 10px; 
-    border-radius: 20px;
-    color: var(--color-title);
-}
-
-#third-section .mes-formations .colone3{
-    display: flex;
-    flex-direction: column; 
-    justify-content: center; 
-    background-image:url(../asset/clavier.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    align-items: center;
-    padding: 10px; 
-    border-radius: 20px;
+    border-radius: 10px;
+    border: solid .1rem #5f6061;
     color: var(--color-title);
 }
 
@@ -532,18 +504,35 @@ body .caroussel .list .active figure img{
 /*Fourth Section*/
 
 #fourth-section{
-    margin: 20px 130px;
+    background-color: #1c1d32;
+    padding-top: 65px;
+    padding-bottom: 3%;
+}
+#fourth-section .titles{
+    color: var(--color-title);
 }
 
 #fourth-section h3{
-    border: .2rem solid var(--header-bgcolor);
-    border-radius: 5px;
-    padding: 5px;
+    color: var(--color-title);
+    padding: auto;
 }
 
 #fourth-section p{
-    color: var(--header-bgcolor);
+    padding: auto;
+    color: var(--color-title);
+    text-align: left;
+    border: solid .1rem #5f6061;
+    margin-bottom: 30px;
 }
+
+#fourth-section p::before {
+    content: ''; 
+    display: inline-block; 
+    width: 10px; 
+    height: 10px; 
+    margin-right: 10px; 
+    background-color: #d63031; 
+  }
 
 /* Seventh-section */
 #seventh-section{
@@ -679,7 +668,8 @@ transform: translateY(30px);
         width: 75%;
     }
     .monlogo img{
-        display: none;
+        width: 10%;
+        height: 10%;
     }
 
     #second-section {
@@ -732,8 +722,8 @@ transform: translateY(30px);
         font-size: 2.8rem;
     }
     #second-section {
-    margin: auto 5%;
-    height: 100vh;
+    margin: auto 3%;
+    height: 75vh;
     
     }
 
@@ -748,7 +738,11 @@ transform: translateY(30px);
         gap: 20px; 
     }
     #second-section .mes-softs .colone{
-        margin: auto 15px;
+        margin: auto 10px;
+    }
+
+    #second-section .mes-softs .colone p{
+        font-size: 1rem;
     }
 
     #second-section .mes-softs img{
@@ -762,18 +756,7 @@ transform: translateY(30px);
         margin: auto 25px;
     }
 
-    #fourth-section{
-        margin: 10px 10px;
+    #fourth-section .my-paragraphs p{
+        font-size: 1.2rem;
     }
-
-    #fourth-section h3{
-        text-align: center;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    #second-section {
-        height: 125vh;
-        
-        }
 }
