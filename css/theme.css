@@ -36,24 +36,28 @@ header h1{
 header .download{
     position: absolute;
     right: 2%;
-    border-radius: 10px;
+    border-radius: 20px;
+    border: solid .2rem var(--color-title);
+    padding: 5px;
+    cursor: pointer;
 }
+
+
 
 header .download a{
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #0576ff;
+    color: var(--color-title);
     font-size: 1.5rem;
     margin: auto 8px;
     border-radius: 15px;
     transition: ease-in-out .3s;
 }
 
-header .download a:hover{
-    background-color: rgba(95, 94, 94, 0.588) ;
-    backdrop-filter: blur(10px);
-    color: var(--color-title);
+header .download:hover{
+    border-radius: 20px;
+    border: solid .2rem #0576ff;
 }
 
 header h1 span{
@@ -66,7 +70,7 @@ header h1 span{
     display: flex;
     width: 100%;
     height: 80px;
-    background-color: var(--timberwolf);
+    background-image: linear-gradient(to right, #0576ff, #1c1d32);
     top: 0;
     align-items: center;
     z-index: 100;
@@ -130,7 +134,7 @@ header h1 span{
     width: 0;
     height: 2px;
     z-index: 1000;
-    background-color: #0576ff;
+    background-color: var(--color-title);
 }
 
 
@@ -677,7 +681,7 @@ transform: translateY(30px);
     }
 
     .second-navbar .monlogo{
-        left: 40%;
+        left: 30%;
     }
     .monlogo img{
         width: 40%;
