@@ -146,9 +146,9 @@ header h1 span{
     top: 80px;
     left: 0;
     width: 0;
-    height: 2px;
+    height: 3px;
     z-index: 1000;
-    background-color: #1c1d32;
+    background-color: #d63031;
 }
 
 
@@ -161,7 +161,7 @@ header h1 span{
 }
 
 main{
-    margin-top: 80px;
+    margin-top: 20px;
 }
 
 /* Mot de bienvenue*/
@@ -612,7 +612,7 @@ transform: translateY(30px);
     .menu-icon{
         display: block;
         position: absolute;
-        right: 10px;
+        left: 10px;
         width: 35px;
         transition: .4s;
             
@@ -621,7 +621,7 @@ transform: translateY(30px);
     .menu-burger-icon-fermer{
         display: none;
         position: absolute;
-        right: 2px;
+        left: 2px;
         width: 50px;
         transition: .4s;
     }
@@ -632,8 +632,8 @@ transform: translateY(30px);
     }
     
     .navbar .links {
-        top: 150%;
-        right: 0;
+        top: 80px;
+        left: 0;
         position: fixed;
         background-color: rgba(95, 94, 94, 0.588) ;
         backdrop-filter: blur(10px);
@@ -644,18 +644,20 @@ transform: translateY(30px);
         justify-content: start;
         text-align: left;
         gap: 1.2rem;
-        margin-right: -100%;
+        margin-left: -100%;
         padding: 30px 15px;
         transition: all 0.3s ease;
-        z-index: 10;
+        z-index: 2000;
     }
 
     .navbar{
-        padding-left: 5px;
+        border: none;
     }
-
+    header h1{
+        display: none;
+    }
     .links.mobile-menu{
-        margin-right: 0;
+        margin-left: 0;
     }
     .navbar .links li{
         width: 100%;
@@ -712,9 +714,6 @@ transform: translateY(30px);
 }
 
 @media screen and (max-width: 500px) {
-    .navbar .links {
-        top: 125px;
-    }
     
     header h1{
         font-size: 2.5rem;
