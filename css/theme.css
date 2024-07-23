@@ -161,25 +161,25 @@ header h1 span{
 }
 
 main{
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 /* Mot de bienvenue*/
 
 .image-accueil{
     background-image: url(../asset/Image-accueil.jpg);
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 80vh;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-    gap: 30px;
+    gap: 20px;
 }
 .section-welcome{
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 
@@ -204,12 +204,14 @@ main{
     color: #fff;
     top: 20px;
     text-transform: uppercase;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .image-accueil .fleche-bas{
     width: 80px;
     height:80px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 .image-accueil .fleche-bas img{
     width: 80px;
@@ -253,7 +255,6 @@ main{
 /* Première section Hard-skills */
 #first-section{
     position: relative;
-    padding-top: 64px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -460,44 +461,57 @@ body .caroussel .list .active figure img{
 /* Deuxième section Soft-skills */ 
 
 #second-section{
-    position: relative;
-    padding-top: 64px;
-    margin: auto 20%;
-    height: 130vh;
-    overflow: hidden;
+    padding-bottom: 2%;
+    margin-bottom: 30px;
 }
 #second-section .mes-softs{
-    display: block;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    justify-content: center;
+    gap: 2%;
+}
+
+#second-section .mes-softs .colone{ 
+    background-color: #232442; ;
+    padding: 10px; 
+    border-radius: 10px;
+    border: solid .1rem #5f6061;
+    color: var(--color-title);
+}
+
+#second-section .colone .img-bg{
+    width: 70px;
+    height: 70px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
-
-#second-section .mes-softs .colone{
-    position: relative;
-     display: flex; 
-     padding: 10px; 
-     margin-bottom: 20px;
+#second-section .colone .img-bg img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
 }
 
 #second-section .mes-softs .colone .contenu{
-    border-left: solid .1rem #0576ff;
-    border-top: solid .1rem #0576ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     border-radius: 10px;
     margin-left: 25px;
     margin-right: 25px;
     padding-left: 5%;
     padding-top: 10px;
+    gap: 5px;
 }
 #second-section .mes-softs .colone .contenu h4,
 #second-section .mes-softs .colone .contenu p{
-    text-align: left;
+    text-align: center;
 }
 
-#second-section .mes-softs img{
-    width: 8vw;
-    background-color: #232442;
-    border-radius: 20px;
-}
 
 
 /*Third-section*/
@@ -749,11 +763,12 @@ transform: translateY(30px);
         letter-spacing: 0.2rem;
     }
     .image-accueil{
-        height: 35vh;
-    }
+        height: 45vh;
+        gap: 8px;
+    }    
 
     .image-accueil .fleche-bas{
-        margin-bottom: 30px;
+        margin-bottom: 10px;
     }
     .image-accueil .fleche-bas img{
         width: 70px;
@@ -789,11 +804,6 @@ transform: translateY(30px);
     }
     .section-welcome .welcomeword .texte-degrade{
         font-size: 2.8rem;
-    }
-    #second-section {
-    margin: auto 3%;
-    height: 75vh;
-    
     }
 
     #second-section .mes-softs .colone .contenu{
