@@ -750,9 +750,6 @@ transform: translateY(30px);
         width: 40%;
         height: 40%;
     }
-
-    #second-section {
-        height: 90vh;
     
 }
 
@@ -820,9 +817,6 @@ transform: translateY(30px);
         margin: auto 10px;
     }
 
-    #second-section .mes-softs .colone p{
-        font-size: 1rem;
-    }
 
     #second-section .mes-softs img{
         height: 7vh;
