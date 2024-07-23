@@ -137,7 +137,7 @@ document.querySelectorAll('[class*="reveal-"]').forEach(function (r) {
   observer.observe(r)
 });
 
-const navbar = document.getElementById('navbar-1'); 
+const navbar = document.getElementById('navbar'); 
   window.addEventListener('scroll', function(){
   const currentScrollPosition = window.scrollY;
   const previousScrollPosition = this.previousScrollPosition || 0;

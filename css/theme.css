@@ -148,7 +148,7 @@ header h1 span{
     width: 0;
     height: 3px;
     z-index: 1000;
-    background-color: #d63031;
+    background-color: #023e87;
 }
 
 
@@ -161,14 +161,28 @@ header h1 span{
 }
 
 main{
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 /* Mot de bienvenue*/
-.section-welcome{
-    background-color: #fff;
-    margin-bottom: -60px;
+
+.image-accueil{
+    background-image: url(../asset/Image-accueil.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 30px;
 }
+.section-welcome{
+    margin-bottom: 30px;
+}
+
+
 .welcomeword { 
     color: var(--header-bgcolor);
     text-align: center;  
@@ -183,10 +197,22 @@ main{
     background-clip: text;
     font-size: 6rem;
   }
-.welcomeword p{
-    font-size: 1.8rem;
-    font-weight: 300;
-    padding: 1.5rem;
+.image-accueil p{
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+    top: 20px;
+    text-transform: uppercase;
+}
+
+.image-accueil .fleche-bas{
+    width: 80px;
+    height:80px;
+    margin-bottom: 100px;
+}
+.image-accueil .fleche-bas img{
+    width: 80px;
 }
 
 /* Ligne d'espacement bleue*/
@@ -596,15 +622,15 @@ transform: translateY(30px);
 }
 
 .reveal-2{
-    transition-delay: .1s;
-}
-
-.reveal-3{
     transition-delay: .2s;
 }
 
-.reveal-4{
+.reveal-3{
     transition-delay: .3s;
+}
+
+.reveal-4{
+    transition-delay: .4s;
 }
 
 /* Les medias screen */
@@ -613,17 +639,17 @@ transform: translateY(30px);
         display: block;
         position: absolute;
         left: 10px;
-        width: 35px;
-        transition: .4s;
+        width: 40px;
+        transition: .4s ease-in-out;
             
     }
 
     .menu-burger-icon-fermer{
         display: none;
         position: absolute;
-        left: 2px;
-        width: 50px;
-        transition: .4s;
+        left: 10px;
+        width: 40px;
+        transition: .4s ease-in-out; 
     }
     
     .menu-icon:hover{
@@ -631,6 +657,9 @@ transform: translateY(30px);
         
     }
     
+    .image-accueil p{
+        font-size: 1.5rem;
+    }
     .navbar .links {
         top: 80px;
         left: 0;
@@ -647,7 +676,7 @@ transform: translateY(30px);
         margin-left: -100%;
         padding: 30px 15px;
         transition: all 0.3s ease;
-        z-index: 2000;
+        
     }
 
     .navbar{
@@ -718,6 +747,16 @@ transform: translateY(30px);
     header h1{
         font-size: 2.5rem;
         letter-spacing: 0.2rem;
+    }
+    .image-accueil{
+        height: 35vh;
+    }
+
+    .image-accueil .fleche-bas{
+        margin-bottom: 30px;
+    }
+    .image-accueil .fleche-bas img{
+        width: 70px;
     }
 
     #scroller{
