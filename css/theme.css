@@ -695,6 +695,7 @@ transform: translateY(30px);
 
     .navbar{
         border: none;
+        position: relative;
     }
     header h1{
         display: none;
