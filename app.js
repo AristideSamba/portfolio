@@ -135,4 +135,17 @@ const handleIntersect = function (entries, observer) {
 const observer = new IntersectionObserver(handleIntersect, options)
 document.querySelectorAll('[class*="reveal-"]').forEach(function (r) {
   observer.observe(r)
-})
+});
+
+const navbar = document.getElementById('navbar-1'); 
+  window.addEventListener('scroll', function(){
+  const currentScrollPosition = window.scrollY;
+  const previousScrollPosition = this.previousScrollPosition || 0;
+
+  if(currentScrollPosition < previousScrollPosition) {
+    navbar.classList.remove('hidden');
+  } else if (currentScrollPosition > previousScrollPosition){
+    navbar.classList.add('hidden');
+  }
+  this.previousScrollPosition = currentScrollPosition;
+});
