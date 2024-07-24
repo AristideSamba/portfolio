@@ -870,4 +870,9 @@ transform: translateY(30px);
     #seventh-section .contenu-contact .contact-icons img{
         width: 35px;
     }
+    footer p{
+        padding-top: 10px;
+        border-top: #5f6061 solid .1rem;
+        font-size: 1.2rem;
+    }
 }
