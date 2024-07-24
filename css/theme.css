@@ -604,19 +604,50 @@ body .caroussel .list .active figure img{
 /* Seventh-section */
 #seventh-section{
     background-color: #30363d;
+    padding-top: 10px;
+}
+
+#seventh-section .contenu-contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+#seventh-section .titles{
+    color: var(--color-title);
+}
+#seventh-section .contenu-contact p{
+    color: var(--color-title);
+    text-align: center;
+}
+
+#seventh-section .contenu-contact .contact-icons{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+#seventh-section .contenu-contact .contact-icons img{
+    width: 50px;
 }
 
 
 /* Pied de page */ 
 footer{
-    position: absolute;
     background-color: var(--header-bgcolor);
-    margin-bottom: 0;
-    align-items: center;
     width: 100%;
-    height: 40px;
+    padding-top: 50px;
+    
+}
+footer .footer-contenu{
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+}
+
+.monlogo-footer img{
+    width: 150px;
 }
 footer p{
     color: var(--color-title);
@@ -831,5 +862,8 @@ transform: translateY(30px);
 
     #fourth-section .my-paragraphs p{
         font-size: 1.2rem;
+    }
+    #seventh-section .contenu-contact .contact-icons img{
+        width: 30px;
     }
 }
