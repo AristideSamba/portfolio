@@ -612,7 +612,7 @@ body .caroussel .list .active figure img{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 50px;
 }
 #seventh-section .titles{
     color: var(--color-title);
@@ -637,6 +637,7 @@ footer{
     background-color: var(--header-bgcolor);
     width: 100%;
     padding-top: 50px;
+    padding-bottom: 10px;
     
 }
 footer .footer-contenu{
@@ -647,7 +648,7 @@ footer .footer-contenu{
 }
 
 .monlogo-footer img{
-    width: 150px;
+    width: 100px;
 }
 footer p{
     color: var(--color-title);
@@ -863,7 +864,10 @@ transform: translateY(30px);
     #fourth-section .my-paragraphs p{
         font-size: 1.2rem;
     }
+    #seventh-section .contenu-contact .contact-icons{
+        gap: 20px;
+    }
     #seventh-section .contenu-contact .contact-icons img{
-        width: 30px;
+        width: 35px;
     }
 }
