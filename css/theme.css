@@ -232,8 +232,9 @@ main{
 /* Les titre */
 .titles{
     text-align: center;
-    font-weight: 300;
+    font-size: 3rem;
     color: var(--header-bgcolor);
+    text-transform: uppercase;
 }
 
 .my-paragraphs{
@@ -463,6 +464,21 @@ body .caroussel .list .active figure img{
     padding-bottom: 2%;
     margin-bottom: 30px;
 }
+#second-section .titre-softs{
+    background-color: #001741;
+    width: 70%;
+    height: 150px;
+    margin: auto 200px;
+    margin-bottom: 30px;
+}
+#second-section .titre-softs h2{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 3rem;
+    padding-left: 40px;
+    padding-top: 70px;
+}
+
 #second-section .mes-softs{
     display: grid;
     grid-template-columns: 20% 20% 20% 20%;
@@ -619,18 +635,21 @@ body .caroussel .list .active figure img{
 
 #sixth-section .mes-loisirs{
     display: grid;
-    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-columns: 40% 30%;
     justify-content: center;
-    gap: 15px;
+    gap: 30px;
     margin: 30px auto;
 }
 
 #sixth-section .mes-loisirs .colones{
     border: #001741 solid .1rem;
+    border-radius: 5px;
     display: flex;
     align-items: center;
     flex-direction: column;
     padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 #sixth-section .mes-loisirs .colones img{
@@ -891,6 +910,13 @@ transform: translateY(30px);
         flex-direction: column;
         gap: 20px; 
     }
+
+    #second-section .titre-softs{
+        width: 100%;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
     #second-section .mes-softs .colone{
         margin: auto 10px;
     }
